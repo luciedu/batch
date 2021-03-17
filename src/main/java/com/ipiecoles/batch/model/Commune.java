@@ -78,4 +78,5 @@ public class Commune {
     public void setLongitude(Double longitude) {
         this.longitude = longitude;
     }
+
 }
