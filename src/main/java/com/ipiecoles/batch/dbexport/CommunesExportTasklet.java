@@ -15,18 +15,24 @@ public class CommunesExportTasklet implements Tasklet {
 
     Logger logger = LoggerFactory.getLogger(this.getClass());
 
+
+    // Détails des étapes lors de l'export
+
+    // Export en cours
     @Override
     public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception {
         System.out.println("Export table DB COMMUNE");
         return RepeatStatus.FINISHED;
     }
 
+    // Lancement de l'export
     @BeforeStep
     public void beforeStep(StepExecution sExec) throws Exception {
         //Avant l'exécution de la Step
         logger.info("Lancement de l'export de la table COMMUNE en fichier txt");
     }
 
+    // Fin de l'export
     @AfterStep
     public ExitStatus afterStep(StepExecution sExec) throws Exception {
         //Une fois la Step

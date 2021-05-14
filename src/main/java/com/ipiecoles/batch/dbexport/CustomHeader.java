@@ -13,6 +13,7 @@ public class CustomHeader implements FlatFileHeaderCallback {
         this.communeRepository = communeRepository;
     }
 
+    // Texte qui sera présent pour l'entête du fichier
     @Override
     public void writeHeader(Writer writer) throws IOException {
         writer.write("Total codes postaux : " + communeRepository.countDistinctCodePostal());

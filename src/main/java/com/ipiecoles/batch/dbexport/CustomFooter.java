@@ -14,6 +14,7 @@ public class CustomFooter implements FlatFileFooterCallback {
         this.communeRepository = communeRepository;
     }
 
+    // Texte qui sera présent en bas du fichier
     @Override
     public void writeFooter(Writer writer) throws IOException {
         writer.write("Total communes : " + communeRepository.countDistinctNom());
