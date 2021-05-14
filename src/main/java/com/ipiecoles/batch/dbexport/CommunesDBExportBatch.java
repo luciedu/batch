@@ -44,7 +44,7 @@ public class CommunesDBExportBatch {
     @Value("${importFile.chunkSize}")
     private Integer chunkSize;
 
-// JOB
+    // JOB
     @Bean
     @Qualifier("exportCommunes")
     public Job exportCommunes(Step stepExportTasklet, Step stepExport){

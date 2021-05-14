@@ -2,7 +2,6 @@ package com.ipiecoles.batch.dbexport;
 
 import com.ipiecoles.batch.repository.CommuneRepository;
 import org.springframework.batch.item.file.FlatFileHeaderCallback;
-
 import java.io.IOException;
 import java.io.Writer;
 

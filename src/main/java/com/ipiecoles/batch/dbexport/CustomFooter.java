@@ -1,10 +1,7 @@
 package com.ipiecoles.batch.dbexport;
 
-
-
 import com.ipiecoles.batch.repository.CommuneRepository;
 import org.springframework.batch.item.file.FlatFileFooterCallback;
-import org.springframework.beans.factory.annotation.Value;
 import java.io.IOException;
 import java.io.Writer;
 
